@@ -1,0 +1,280 @@
+/* Customization of the site as a whole */
+body {
+	background-color: #fafafb;
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Customization of Header 1 */
+h1 {
+	color: #071847;
+	text-align: center;
+	font-size: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+/* Customization of Header 2 */
+h2 {
+	color: #3b4e84;
+	text-align: center;
+	font-size: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Customization of Header 3 */
+h3 {
+	color: #6c7ba3;
+	text-align: center;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Customization of paragraph text */
+p {
+	color: #000;
+	font-size: 18px;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+}
+
+/* Customization of footer background */
+footer {
+	position: static;
+	background-color: #071847;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* Customization of footer p element */
+.footertext p {
+	color: #fafafb;
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+/* Customization of all footer social media icons */
+.fab {
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	transition: .3s ease-in-out;
+}
+
+/* Customization of footer social media icon hover - makes icon semi-transparent when user hovers over it */
+.fab:hover {
+    opacity: 0.5;
+}
+
+/* Customization of footer LinkedIn icon */
+.fa-linkedin {
+	background: #6c7ba3;
+	color: #fff;
+}
+
+/* Centers the footer icon on the webpage */
+.centericon {
+	display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+/* Container to hold projects */
+.projectcontainer {
+	position: relative;
+	width: 100%;
+}
+
+/* Customization of project image, center to column, change opacity when user hovers over it */
+.projectimage {
+	opacity: 1;
+	display: block;
+	transition: .6s ease-in-out;
+	backface-visibility: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Customization project image text box that displays text in the middle of the project image */
+.projectmiddle {
+	transition: .6s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+/* Customization of project image opacity when hovered over it */
+.projectcontainer:hover .projectimage {opacity: 0.4;}
+
+/* Customization of project text box opacity when hovered over the project image */
+.projectcontainer:hover .projectmiddle {opacity: 1;}
+
+/* Customization of text about the project that appears when hovered over the image */
+.projecttext p {
+	background-color: #b5bdd1;
+	color: #fff;
+	font-weight: normal;
+	font-size: 16px;
+	padding: 16px 32px;
+	border-radius: 6px;
+	text-align: center;
+}
+
+/* Responsive Two Column Layout for Projects Page Begin */
+/* Create two even columns */
+.columnprojects {
+	float: left;
+	width: 50%; /* two columns */
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Clear floats after columns to allow page to continue flow of other content */
+.rowprojects:after {
+	content: "";
+	display: table;
+	clear: both;
+	padding-bottom: 25px;
+	margin-bottom: 6px;
+}
+
+/* Customization of banner class */
+.banner {
+	background-color: #e6e9ef;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Customization of h1 element in banner class */
+.banner h1 {
+	font-size: 65px;
+	padding: 5px;
+	color: #000;
+}
+
+/* Customization of dividing lines */
+hr.rounded {
+	border-radius: 6px;
+	border-top: 3px solid #6c7ba3;
+	margin: 25px;
+}
+
+/* Inspiration: https://www.w3schools.com/css/css3_buttons.asp */
+/* Customization of the button container */
+.buttoncontainer {
+	padding-bottom: 25px;
+	background-color: transparent;
+	text-align: center;
+}
+
+/* Customization of the section button */
+.clickherebutton {
+	background-color: #6c7ba3;
+	justify-content: center;
+	text-decoration: none;
+	display: flex;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 6px;
+}
+/* Customization of the h3 of the section button text */
+.clickherebutton h3 {
+	color: white;
+}
+/* Adding a hover on the section button */
+.clickherebutton:hover {
+	background-color: #b5bdd1;
+	transition: 0.3s;
+}
+
+/* Customization on the section button */
+.projectbutton {
+	background-color: #3b4e84;
+	justify-content: center;
+	text-decoration: none;
+	display: flex;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 6px;
+}
+/* Customization of the h3 of the section button text */
+.projectbutton h4 {
+	color: white;
+}
+/* Adding a hover on the section button */
+.projectbutton:hover {
+	background-color: #b5bdd1;
+	transition: 0.3s;
+}
+
+
+/* Customization of back to top button */
+/* Inspiration: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#backtotop {
+	position: fixed;
+	bottom: 20px; 
+	right: 20px; 
+	z-index: 99; 
+	border: none;
+	background-color: #6c7ba3; 
+	color: #fff; 
+	padding: 15px; 
+	border-radius: 6px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#backtotop:hover {
+	background-color: #b5bdd1;
+	transition: 0.3s;
+}
+
+.navcolumn1, .navcolumn2 {
+	float: left;
+	width: 50%;
+}
+
+.buttoncontainer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* RESPONSIVE DESIGN */
+/* For resizing images */
+img {
+	max-width: 100%;   
+	height: auto;
+}	
+/* If the browser window is 600px or smaller */
+@media screen and (max-width: 600px) {
+	/* Classes starting with home-column is set to 100% width */
+    [class*="navcolumn"] {width: 100%;}
+	/* Reduce font size of home-banner h1 element */
+	.home-banner h1 {font-size: 45px;}
+	/* Reduce font size when screen size shrinks */
+	.projecttext p {font-size: 13px;}
+}
+/* Display projects in one column if page size is too small */
+@media screen and (max-width: 1500px) {
+	.columnprojects {width: 100%;}
+}
