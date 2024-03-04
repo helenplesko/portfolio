@@ -5,9 +5,8 @@ body {
 	margin: 0;
 }
 
-* {
-	box-sizing: border-box;
-}
+/* Setting box-sizing for all elements to border-box */
+* {box-sizing: border-box;}
 
 /* Customization of Header 1 */
 h1 {
@@ -73,9 +72,7 @@ footer {
 }
 
 /* Customization of footer social media icon hover - makes icon semi-transparent when user hovers over it */
-.fab:hover {
-    opacity: 0.5;
-}
+.fab:hover {opacity: 0.5;}
 
 /* Customization of footer LinkedIn icon */
 .fa-linkedin {
@@ -134,8 +131,7 @@ footer {
 	text-align: center;
 }
 
-/* Responsive Two Column Layout for Projects Page Begin */
-/* Create two even columns */
+/* Create two even columns for projects */
 .columnprojects {
 	float: left;
 	width: 50%; /* two columns */
@@ -174,12 +170,19 @@ hr.rounded {
 	margin: 25px;
 }
 
-/* Inspiration: https://www.w3schools.com/css/css3_buttons.asp */
 /* Customization of the button container */
+/* Inspiration: https://www.w3schools.com/css/css3_buttons.asp */
 .buttoncontainer {
 	padding-bottom: 25px;
 	background-color: transparent;
 	text-align: center;
+}
+
+/* Removing columns after button container */
+.buttoncontainer:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* Customization of the section button */
@@ -194,10 +197,10 @@ hr.rounded {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 6px;
 }
+
 /* Customization of the h3 of the section button text */
-.clickherebutton h3 {
-	color: white;
-}
+.clickherebutton h3 {color: white;}
+
 /* Adding a hover on the section button */
 .clickherebutton:hover {
 	background-color: #b5bdd1;
@@ -216,16 +219,21 @@ hr.rounded {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 6px;
 }
+
 /* Customization of the h3 of the section button text */
-.projectbutton h4 {
-	color: white;
-}
+.projectbutton h4 {color: white;}
+
 /* Adding a hover on the section button */
 .projectbutton:hover {
 	background-color: #b5bdd1;
 	transition: 0.3s;
 }
 
+/* Two columns for navigation buttons */
+.navcolumn1, .navcolumn2 {
+	float: left;
+	width: 50%;
+}
 
 /* Customization of back to top button */
 /* Inspiration: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
@@ -243,37 +251,22 @@ hr.rounded {
 	cursor: pointer;
 }
 
+/* Adding transition and color to back to top button */
 #backtotop:hover {
 	background-color: #b5bdd1;
 	transition: 0.3s;
 }
 
-.navcolumn1, .navcolumn2 {
-	float: left;
-	width: 50%;
-}
-
-.buttoncontainer:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-/* RESPONSIVE DESIGN */
-/* For resizing images */
-img {
-	max-width: 100%;   
-	height: auto;
-}	
 /* If the browser window is 600px or smaller */
 @media screen and (max-width: 600px) {
-	/* Classes starting with home-column is set to 100% width */
+	/* Classes starting with navcolumn is set to 100% width */
     [class*="navcolumn"] {width: 100%;}
-	/* Reduce font size of home-banner h1 element */
+	/* Reduce font size of banner h1 element */
 	.home-banner h1 {font-size: 45px;}
 	/* Reduce font size when screen size shrinks */
 	.projecttext p {font-size: 13px;}
 }
+
 /* Display projects in one column if page size is too small */
 @media screen and (max-width: 1500px) {
 	.columnprojects {width: 100%;}
