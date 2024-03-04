@@ -262,12 +262,15 @@ hr.rounded {
 	/* Classes starting with navcolumn is set to 100% width */
     [class*="navcolumn"] {width: 100%;}
 	/* Reduce font size of banner h1 element */
-	.home-banner h1 {font-size: 45px;}
+	.banner h1 {font-size: 45px;}
 	/* Reduce font size when screen size shrinks */
 	.projecttext p {font-size: 13px;}
 }
 
-/* Display projects in one column if page size is too small */
+/* If the browser window is 1500px or smaller */
 @media screen and (max-width: 1500px) {
+	/* Display projects in one column */
 	.columnprojects {width: 100%;}
+	/* Adjust image size */
+	img {width: 100%; height: auto;}
 }
