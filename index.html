@@ -10,6 +10,8 @@
 		
 	<body>
 
+		<!-- Back to top button call function and script reference -->
+		<!-- Inspired by https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
 		<button onclick="topFunction()" id="backtotop" title="Back to top">Back to top</button>
 		<script src="js/javascript.js"></script>
 
@@ -20,8 +22,10 @@
 		</header>
 
 		<div class="navigation">
+			<!-- Introduction to page -->
 			<h1>Welcome</h1>
 			<p>I'm Helen Plesko - born and raised in Toronto, Ontario, Canada. I'm currently a GIS Applications Specialist student at Fleming College, where I've been creatively using Esri's technology and other GIS software to interpret aerial photography, prepare and edit geospatial datasets and databases, and create meaningful cartographic outputs. Continue scrolling or use the navigation buttons below to see the projects I've completed using Esri-focused products throughout my educational studies at Fleming College.</p>
+			<!-- Buttons linking to project sections on page -->
 			<div class="buttoncontainer">
 				<div class="navcolumn1">
 					<a href="#spatanalysis" class="clickherebutton"><h3>Spatial Analysis</h3></a>
@@ -39,6 +43,7 @@
 
 		<hr class="rounded">
 
+		<!-- Spatial Analysis Projects -->
 		<div class="spatanalysiscontainer">
 			<h1 id="spatanalysis">Spatial Analysis</h1>
 			<div class="rowprojects">
@@ -46,10 +51,10 @@
 					<h2>Toronto's Primary Care Enrolment</h2>
 					<h3>Statistical analysis conducted in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoPrimCareEnr.png" alt="Toronto Primary Care Enrolment by Helen Plesko" width="527" height="400" class="projectimage">
+						<img src="images/HPleskoPrimCareEnr.png" alt="Toronto Primary Care Enrolment by Helen Plesko" width="527" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
-								<p>This cartographic output summarizes the method and results of a statistical analysis of Primary Care Enrolment in Toronto, Ontario. The variables involved in the analysis were: employed population, university graduates with a certificate or diploma, median household income after tax, and primary care enrolment values. Data related to these variables were gathered through reliable open sourced hubs. ArcGIS Pro's Ordinary Least Squares and Geographically Weighted Regression tools were used to conduct and evaluate the analysis. </p>
+								<p>This cartographic output summarizes the method and results of a statistical analysis of Primary Care Enrolment in Toronto, Ontario. The variables involved in the analysis were: employed population, university graduates with a certificate or diploma, median household income after tax, and primary care enrolment values. Data related to these variables were gathered through reliable open-sourced hubs. ArcGIS Pro's Ordinary Least Squares and Geographically Weighted Regression tools were used to conduct and evaluate the analysis. </p>
 							</div>
 						</div>
 					</div>
@@ -58,7 +63,7 @@
 					<h2>Driving Time to Toronto's Health Services</h2>
 					<h3>Notebook created in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoSubUseLocAmb.png" alt="TO Substance Use Treatment and Ambulance Stations Notebook by Helen Plesko" width="308" height="400" class="projectimage">
+						<img src="images/HPleskoSubUseLocAmb.png" alt="TO Substance Use Treatment and Ambulance Stations Notebook by Helen Plesko" width="308" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>This is one page of a 196-page ArcGIS Pro Notebook of the City of Toronto shows the proximity of Substance Use Treatment Locations to Ambulance Stations within the city by vehicle. Closest Facility Network Analysis tools were used to find ambulance stations within 4 minute drive time to the substance use treatment centers.</p>
@@ -72,26 +77,28 @@
 					<h2>Toronto's Health Services Proximity to TTC</h2>
 					<h3>Interactive ArcGIS Dashboard</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoDashboard.png" alt="Toronto Health Services Proximity to TTC by Helen Plesko" width="704" height="400" class="projectimage">
+						<img src="images/HPleskoDashboard.png" alt="Toronto Health Services Proximity to TTC by Helen Plesko" width="704" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>This dashboard shows the locations of Substance Use Treatment Centres and Ambulance Stations within Toronto, ON, and their proximity to the city's TTC route. ArcGIS Pro's Linear Referencing and Geocoding tools were used to create the layers. Layers were then shared to ArcGIS Online, where they were added to a Dashboard application.</p>
 							</div>
 						</div>
 					</div>
+					<!-- Button to view project in another window -->
 					<a href="https://www.arcgis.com/apps/dashboards/cef4f24bf0dd4048a44da701805e5c49" class="projectbutton" target="_blank"><h4>View Project</h4></a>
 				</div>
 				<div class="columnprojects">
 					<h2>Snapping Turtle Habitat Suitability Analysis</h2>
 					<h3>Interactive ArcGIS StoryMap</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoStoryMap.png" alt="Snapping Turtle Habitat Suitability Analysis by Helen Plesko" width="586" height="400" class="projectimage">
+						<img src="images/HPleskoStoryMap.png" alt="Snapping Turtle Habitat Suitability Analysis by Helen Plesko" width="586" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
-								<p>To potentially help monitor and protect the snapping turtle species, an analytic hierarchy process (AHP) multi-criteria decision analysis (MCDA) was performed to determine areas most suitable for their habitat. The 5 criteria considered in this analysis were Aspect, Land Cover, Distance from Waterbody, Distance from Road, and Distance from Fishing Access Points. Data related to these variables were gathered through reliable open sourced hubs. In the StoryMap, users are able to compare the original layers to the site suitability layers, as well as explore the resulting suitability map.</p>
+								<p>To potentially help monitor and protect the snapping turtle species, an analytic hierarchy process (AHP) multi-criteria decision analysis (MCDA) was performed to determine areas most suitable for their habitat. The 5 criteria considered in this analysis were Aspect, Land Cover, Distance from Waterbody, Distance from Road, and Distance from Fishing Access Points. Data related to these variables were gathered through reliable open-sourced hubs. In the StoryMap, users are able to compare the original layers to the site suitability layers, as well as explore the resulting suitability map.</p>
 							</div>
 						</div>
 					</div>
+					<!-- Button to view project in another window -->
 					<a href="https://storymaps.arcgis.com/stories/b44aca856eba4a10bac4c3c0c70bd5e0" class="projectbutton" target="_blank"><h4>View Project</h4></a>
 				</div>
 			</div>
@@ -99,6 +106,7 @@
 
 		<hr class="rounded">
 
+		<!-- Geovisualization Projects -->
 		<div class="geoviscontainer">
 			<h1 id="geovis">Geovisualization</h1>
 			<div class="rowprojects">
@@ -106,7 +114,7 @@
 					<h2>Greenspaces in Mississauga</h2>
 					<h3>Features generalized and symbolized in grayscale in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoGrayscale.png" alt="Grayscale Greenspaces by Helen Plesko" width="517" height="400" class="projectimage">
+						<img src="images/HPleskoGrayscale.png" alt="Grayscale Greenspaces by Helen Plesko" width="517" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>This map shows the greenspaces in Mississauga, Ontario, in grayscale. Several generalization techniques were used in ArcGIS Pro to prepare the data for Avenza MAPublisher in Adobe Illustrator. Symbolizing the features in grayscale makes the map accessible to those with colorblindness.</p>
@@ -118,7 +126,7 @@
 					<h2>TDSB School Distribution by Ward</h2>
 					<h3>Generalization techniques applied in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoTDSBSchoolDist.png" alt="TDSB School Distribution by Ward by Helen Plesko" width="639" height="400" class="projectimage">
+						<img src="images/HPleskoTDSBSchoolDist.png" alt="TDSB School Distribution by Ward by Helen Plesko" width="639" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>This map shows the distribution of elementary and secondary schools within each ward across the Toronto District School Board. It was created for a large paper format. Various generalization techniques were used in ArcGIS Pro to clean up the road network, waterways, and vegetation. </p>
@@ -131,6 +139,7 @@
 
 		<hr class="rounded">
 
+		<!-- Environmental Modelling Projects -->
 		<div class="enviromodellingcontainer">
 			<h1 id="enviromodelling">Environmental Modelling</h1>
 			<div class="rowprojects">
@@ -138,7 +147,7 @@
 					<h2>Picnic Site Suitability Analysis</h2>
 					<h3>3D Local Scene created in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoPicnicSuitability.png" alt="Picnic Site Suitability Analysis by Helen Plesko" width="615" height="400" class="projectimage">
+						<img src="images/HPleskoPicnicSuitability.png" alt="Picnic Site Suitability Analysis by Helen Plesko" width="615" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>A simple terrain analysis was conducted to find the most suitable areas for a picnic in the Peterborough Area of Ontario. The criteria considered in the analysis were slope, aspect, proximity to infrastructure, and proximity to natural phenomena including parks and vegetation. 3D visualization was added to the cartographic output using ArcGIS Pro's Local Scene to provide an additional perspective to one of the most suitable areas for a picnic.</p>
@@ -146,14 +155,14 @@
 						</div>
 					</div>
 				</div>
-			<div class="columnprojects">
+				<div class="columnprojects">
 					<h2>Comparing Drainage Lines</h2>
 					<h3>ArcHydro tools used in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoDrainageLines.png" alt="Comparing Drainage Lines by Helen Plesko" width="327" height="400" class="projectimage">
+						<img src="images/HPleskoDrainageLines.png" alt="Comparing Drainage Lines by Helen Plesko" width="327" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
-								<p>ArcHydro tools within ArcGIS Pro were used to create a map comparing drainage lines. Multiple ArcHydro Terrain Preprocessing tools were applied to the DEM derived Flow Direction to create Drainage Line 1. Similar tools were applied to the Enhanced Flow Direction Grid to create Drainage Line 2, a hydrology dataset based off of provincial hydrology and elevation data. These two sets of drainage lines were compared visually to each other and the original drainage network data.</p>
+								<p>ArcHydro tools within ArcGIS Pro were used to create a map comparing drainage lines. Multiple ArcHydro Terrain Preprocessing tools were applied to the DEM derived Flow Direction to create Drainage Line 1. Similar tools were applied to the Enhanced Flow Direction Grid to create Drainage Line 2, a hydrology dataset based off provincial hydrology and elevation data. These two sets of drainage lines were compared visually to each other and the original drainage network data.</p>
 							</div>
 						</div>
 					</div>
@@ -163,6 +172,7 @@
 
 		<hr class="rounded">
 
+		<!-- Web Design and Development Projects -->
 		<div class="webdesigndevcontainer">
 			<h1 id="webdesigndev">Web Design and Development</h1>
 			<div class="rowprojects">
@@ -170,26 +180,28 @@
 					<h2>Map of Canada Educational Resource</h2>
 					<h3>References ArcGIS Server map service</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoCanadaResource.png" alt="Map of Canada Educational Resource by Helen Plesko" width="382" height="400" class="projectimage">
+						<img src="images/HPleskoCanadaResource.png" alt="Map of Canada Educational Resource by Helen Plesko" width="382" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
-								<p>Enhancements were made to the ArcGIS Maps SDK for JavaScript Tutorials to show Canada and it's provinces and territories. The Canada layer was uploaded to and accessed from ArcGIS Server and other map elements (labels, points, popups, images) were customized with code from the ArcGIS Maps SDK for JavaScript documentation. HTML, CSS, and JavaScript programming languages were used to produce this webpage.</p>
+								<p>Enhancements were made to the ArcGIS Maps SDK for JavaScript Tutorials to show Canada and its provinces and territories. The Canada layer was uploaded to and accessed from ArcGIS Server and other map elements (labels, points, popups, images) were customized with code from the ArcGIS Maps SDK for JavaScript documentation. HTML, CSS, and JavaScript programming languages were used to produce this webpage.</p>
 							</div>
 						</div>
 					</div>
+					<!-- Button to view project in another window -->
 					<a href="https://helenplesko.github.io/AGOL/bonuscanadamap.html" class="projectbutton" target="_blank"><h4>View Project</h4></a>
 				</div>
 				<div class="columnprojects">
 					<h2>Top 5 Romantic Destinations</h2>
 					<h3>Enhanced ArcGIS Maps SDK for JavaScript Tutorials</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoRomanticDest.png" alt="Top 5 Romantic Destinations by Helen Plesko" width="606" height="400" class="projectimage">
+						<img src="images/HPleskoRomanticDest.png" alt="Top 5 Romantic Destinations by Helen Plesko" width="606" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>Enhancements were made to the ArcGIS Maps SDK for JavaScript Tutorials to show the top 5 romantic destinations in the world, according to The Knot, a reputable wedding planning company. HTML, CSS, and JavaScript programming languages were used to produce this webpage.</p>
 							</div>
 						</div>
 					</div>
+					<!-- Button to view project in another window -->
 					<a href="https://helenplesko.github.io/geom99lab2/tutorials/enhancedmap.html" class="projectbutton" target="_blank"><h4>View Project</h4></a>
 				</div>	
 			</div>
@@ -197,6 +209,7 @@
 
 		<hr class="rounded">
 
+		<!-- Remote Sensing Projects -->
 		<div class="remotesensingcontainer">
 			<h1 id="remotesensing">Remote Sensing</h1>
 			<div class="rowprojects">
@@ -204,7 +217,7 @@
 					<h2>Land Cover Across the Oak Ridges Moraine</h2>
 					<h3>Symbolized in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoORMLandCover.png" alt="Land Cover Across the Oak Ridges Moraine by Helen Plesko" width="309" height="400" class="projectimage">
+						<img src="images/HPleskoORMLandCover.png" alt="Land Cover Across the Oak Ridges Moraine by Helen Plesko" width="309" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>This map shows the land cover across the Oak Ridges Moraine. The remote sensing data were processed in CATALYST Professional, where the six classes of land cover were derived using the supervised maximum likelihood classification method. They were then brought into ArcGIS Pro to symbolize and create a cartographic output with various map elements.</p>
@@ -216,7 +229,7 @@
 					<h2>LiDAR Point Cloud Analysis</h2>
 					<h3>Symbolized with shaded relief in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoLiDARPCA.png" alt="LiDAR Point Cloud Analysis by Helen Plesko" width="519" height="400" class="projectimage">
+						<img src="images/HPleskoLiDARPCA.png" alt="LiDAR Point Cloud Analysis by Helen Plesko" width="519" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>This figure compares the results of a LiDAR Point Cloud Analysis of the Bailieboro area in Southern Ontario - DTM, DSM, and original True Color Composite imagery. ArcGIS Pro was used to convert, process, filter, and symbolize the LAS Datasets. The layers were symbolized using Shaded Relief to show elevation. View with 3D ChromaDepth glasses to achieve a 3D effect on the DTM and DSM.</p>
@@ -229,6 +242,7 @@
 
 		<hr class="rounded">
 
+		<!-- Database Development Projects -->
 		<div class="dbdevelopmentcontainer">
 			<h1 id="dbdevelopment">Database Design and Development</h1>
 			<div class="rowprojects">
@@ -236,7 +250,7 @@
 					<h2>Enterprise Geodatabase</h2>
 					<h3>Created and configurated in ArcGIS Pro</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoEnterpriseGDB.png" alt="Data Editing in ArcGIS Pro by Helen Plesko" width="205" height="400" class="projectimage">
+						<img src="images/HPleskoEnterpriseGDB.png" alt="Data Editing in ArcGIS Pro by Helen Plesko" width="205" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>Shown here is a snippet of the Enterprise Geodatabase created in ArcGIS Pro. ArcGIS Pro, PostgreSQL, and FME were used to create, configure, and test an enterprise geodatabase based on a given set of business rules. Assumptions were made and recorded during the design process. Privileges were given to certain users on select objects in the geodatabase through ArcGIS Pro. Attribute rules and contingent value functionalities were created in ArcGIS Pro to meet the needs of the business.</p>
@@ -248,7 +262,7 @@
 					<h2>Tree Collection Database</h2>
 					<h3>Created and utilized in ArcGIS Survey123</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoSurvey123.png" alt="Tree Collection Survey123 by Helen Plesko" width="198" height="400" class="projectimage">
+						<img src="images/HPleskoSurvey123.png" alt="Tree Collection Survey123 by Helen Plesko" width="198" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>A data-collection database was designed using Survey123. The survey was used out in the field to collect data on trees local to the user, including the trees' location, species, height, health, and more. These data were then extracted, transformed, and loaded from ArcGIS Online to Microsoft Access for further processing and querying.</p>
@@ -261,6 +275,7 @@
 
 		<hr class="rounded">
 
+		<!-- Problem Solving and Programming Projects -->
 		<div class="psprogrammingcontainer">
 			<h1 id="psprogramming">Problem Solving and Programming</h1>
 			<div class="rowprojects">
@@ -268,7 +283,7 @@
 					<h2>Calculating Fields</h2>
 					<h3>Python code in ArcGIS Pro's Calculate Field tool</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoPythonPro.png" alt="Python in ArcGIS Pro by Helen Plesko" width="702" height="400" class="projectimage">
+						<img src="images/HPleskoPythonPro.png" alt="Python in ArcGIS Pro by Helen Plesko" width="702" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
 								<p>Here is one example of how Python programming language was used in ArcGIS Pro to calculate a field in the feature's attribute table. Using Python in ArcGIS Pro allows you to automate some of Pro's functionalities. Similar code block can also be used across projects, with the field names changed.</p>
@@ -280,10 +295,10 @@
 					<h2>Python ArcPy Site Package</h2>
 					<h3>Changed ArcGIS Pro project symbology with ArcPy</h3>
 					<div class="projectcontainer">
-							<img src="images/HPleskoArcPy.png" alt="Using ArcPy to Edit ArcGIS Pro Project by Helen Plesko" width="318" height="400" class="projectimage">
+						<img src="images/HPleskoArcPy.png" alt="Using ArcPy to Edit ArcGIS Pro Project by Helen Plesko" width="318" height="400" class="projectimage">
 						<div class="projectmiddle">
 							<div class="projecttext">
-								<p>Here is one example of how symbology of an ArcGIS Pro project was edited through the ArcPy Python site package. VSCode was used to host and run the code block. The ArcPy Python site package allows you to access and automate some of Pro's functionalities. Similar code block can also be used across projects, with the variables and methods changed.</p>
+								<p>Here is one example of how symbology of an ArcGIS Pro project was edited through the ArcPy Python site package. Visual Studio Code was used to host and run the code block. The ArcPy Python site package allows you to access and automate some of Pro's functionalities. Similar code block can also be used across projects, with the variables and methods changed.</p>
 							</div>
 						</div>
 					</div>

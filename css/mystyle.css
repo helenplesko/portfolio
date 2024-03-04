@@ -1,4 +1,4 @@
-/* Customization of the site as a whole */
+/* Customization of the body of site */
 body {
 	background-color: #fafafb;
 	font-family: helvetica, arial, sans-serif;
@@ -61,7 +61,7 @@ footer {
 	font-size: 13px;
 }
 
-/* Customization of all footer social media icons */
+/* Customization of footer social media icon */
 .fab {
 	padding: 15px;
 	font-size: 20px;
@@ -71,7 +71,7 @@ footer {
 	transition: .3s ease-in-out;
 }
 
-/* Customization of footer social media icon hover - makes icon semi-transparent when user hovers over it */
+/* Add hover transparency to social media icon */
 .fab:hover {opacity: 0.5;}
 
 /* Customization of footer LinkedIn icon */
@@ -80,7 +80,7 @@ footer {
 	color: #fff;
 }
 
-/* Centers the footer icon on the webpage */
+/* Centers the footer social media icon on the webpage */
 .centericon {
 	display: flex;
     column-gap: 10px;
@@ -134,7 +134,7 @@ footer {
 /* Create two even columns for projects */
 .columnprojects {
 	float: left;
-	width: 50%; /* two columns */
+	width: 50%;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -220,7 +220,7 @@ hr.rounded {
 	border-radius: 6px;
 }
 
-/* Customization of the h3 of the section button text */
+/* Customization of the h4 of the section button text */
 .projectbutton h4 {color: white;}
 
 /* Adding a hover on the section button */
