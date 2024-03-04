@@ -257,6 +257,12 @@ hr.rounded {
 	transition: 0.3s;
 }
 
+/* Adjust image size when page size changes */
+img {
+	width: 100%; 
+	height: auto;
+}
+
 /* If the browser window is 600px or smaller */
 @media screen and (max-width: 600px) {
 	/* Classes starting with navcolumn is set to 100% width */
@@ -271,6 +277,4 @@ hr.rounded {
 @media screen and (max-width: 1500px) {
 	/* Display projects in one column */
 	.columnprojects {width: 100%;}
-	/* Adjust image size */
-	img {width: 100%; height: auto;}
 }
